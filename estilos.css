@@ -8,21 +8,24 @@
 }
 .container{
     background: red;
-    overflow: hidden; /*desbordamiento y hidden para que quede el tamaño del padre*/
+    display:flex; /* Me organiza lo realizado*/
+    height: 60px;
+    align-items: center;
+    flex-direction: row-reverse;/* Cambiar dirección del menu y content*/
 }
 .menu{
+    text-align: center;
     background:aqua;
-    float: left; /*Elemento flotante*/
     width: 20%; /* canmbiar el ancho*/
-    height: 40px;
+    
 }
 .content{
+    text-align: center;
     background: violet;
     width: 80%;
-    float: left; /*Elemento flotante*/
+
 }
 .footer{
-    clear: both; /*siga su flujo normal no se suba a menu y content*/
     background: orange;
     height: 30px;
 }
