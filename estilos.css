@@ -1,0 +1,28 @@
+.header{
+    background: green;
+    height: 60px; /*Es el alto de 60px */
+}
+.wrapper{
+    max-width: 1000px ; /* Ancho maximo*/
+    margin: 0 auto; /*Margen que acepta cuatro valores con el auto calcula el lado derecho e inquiero y el 0 signifa que deja espacio arriba*/
+}
+.container{
+    background: red;
+    overflow: hidden; /*desbordamiento y hidden para que quede el tamaño del padre*/
+}
+.menu{
+    background:aqua;
+    float: left; /*Elemento flotante*/
+    width: 20%; /* canmbiar el ancho*/
+    height: 40px;
+}
+.content{
+    background: violet;
+    width: 80%;
+    float: left; /*Elemento flotante*/
+}
+.footer{
+    clear: both; /*siga su flujo normal no se suba a menu y content*/
+    background: orange;
+    height: 30px;
+}
