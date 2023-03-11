@@ -1,31 +1,30 @@
 .header{
     background: green;
     height: 60px; /*Es el alto de 60px */
+    grid-area: header;
 }
 .wrapper{
     max-width: 1000px ; /* Ancho maximo*/
     margin: 0 auto; /*Margen que acepta cuatro valores con el auto calcula el lado derecho e inquiero y el 0 signifa que deja espacio arriba*/
-}
-.container{
-    background: red;
-    display:flex; /* Me organiza lo realizado*/
-    height: 60px;
-    align-items: center;
-    flex-direction: row-reverse;/* Cambiar dirección del menu y content*/
+    display: grid; /*Convierta en una cuadricula la disposición del elemento*/
+    grid-template-areas: 'header header header header'
+                         'menu content content content'
+                         'footer footer footer footer';/*Armar cuadricula*/
 }
 .menu{
     text-align: center;
     background:aqua;
-    width: 20%; /* canmbiar el ancho*/
+    grid-area: menu;
     
 }
 .content{
     text-align: center;
     background: violet;
-    width: 80%;
+    grid-area: content;
 
 }
 .footer{
     background: orange;
     height: 30px;
+    grid-area: footer;
 }
